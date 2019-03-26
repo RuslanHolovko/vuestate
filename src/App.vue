@@ -1,12 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <PageHeader />
     <router-view/>
   </div>
 </template>
+
+
+<script>
+
+import PageHeader from "@/components/PageHeader";
+
+export default {
+  name: 'App',
+  components: {
+    PageHeader
+  }
+}
+</script>
+
 
 <style lang="scss">
 #app {
